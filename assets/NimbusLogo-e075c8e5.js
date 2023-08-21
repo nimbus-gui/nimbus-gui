@@ -1,0 +1,2 @@
+import{j as s}from"./jsx-runtime-ffb262ed.js";import{B as t}from"./BetaTag-53bd1bf8.js";import{X as m}from"./Stacks-e9350591.js";const i=()=>s.jsxs(m,{style:{alignItems:"center",justifyContent:"flex-start"},space:"$3",children:[s.jsx("img",{src:"/icons/marks.svg",alt:"marks",className:"nimbus-logomark"}),s.jsx("img",{src:"/icons/nimbus.svg",alt:"marks"}),s.jsx(t,{})]});export{i as N};
+//# sourceMappingURL=NimbusLogo-e075c8e5.js.map

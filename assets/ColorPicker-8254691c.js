@@ -1,0 +1,2 @@
+import{j as o}from"./jsx-runtime-ffb262ed.js";import{r as t}from"./index-76fb7be0.js";import{C as c}from"./Google-6c2214f9.js";import{X as F}from"./Stacks-e9350591.js";const n=()=>{const[r,e]=t.useState("#FFFFFF");return o.jsx(F,{my:10,children:o.jsx(c,{width:"80%",circleSize:40,circleSpacing:12,colors:["#2A4AF5","#F6B03C","#7140FD","#2A799B","#EC266C","#1992D7","#FF7D46","#216266","#F66F8F","#C78F67","#CB6256"],color:r,onChange:s=>e(s.hex)})})};export{n as C};
+//# sourceMappingURL=ColorPicker-8254691c.js.map

@@ -1,0 +1,2 @@
+import{j as r}from"./jsx-runtime-ffb262ed.js";const e=({breadcrumbList:a})=>r.jsx("nav",{className:"breadcrumb-bar-nav",children:r.jsx("ul",{className:"breadcrumb-bar-ul",children:a.map(c=>r.jsx("li",{className:"breadcrumb-bar-li",children:c}))})});try{e.displayName="BreadcrumbBar",e.__docgenInfo={description:"",displayName:"BreadcrumbBar",props:{breadcrumbList:{defaultValue:null,description:"",name:"breadcrumbList",required:!0,type:{name:"string[]"}}}}}catch{}export{e as B};
+//# sourceMappingURL=BreadcrumbBar-6747c85b.js.map
