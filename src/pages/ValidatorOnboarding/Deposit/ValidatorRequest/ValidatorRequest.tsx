@@ -18,7 +18,13 @@ const ValidatorRequest = ({
 
   return (
     <YStack space={'$3'} style={{ width: '100%' }}>
-      <XStack style={{ justifyContent: 'space-between', width: '100%', alignItems: 'center' }}>
+      <XStack
+        style={{
+          justifyContent: 'space-between',
+          width: '100%',
+          alignItems: 'center',
+        }}
+      >
         <ValidatorProfile name={name} address={'zQ3asdf9d4Gs0'} />
         <XStack
           style={{

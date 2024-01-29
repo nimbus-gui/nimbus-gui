@@ -9,7 +9,9 @@ type CopyPastedRecoveryPhraseProps = {
   isSmallScreen?: boolean
 }
 
-const CopyPastedRecoveryPhrase = ({ isSmallScreen }: CopyPastedRecoveryPhraseProps) => {
+const CopyPastedRecoveryPhrase = ({
+  isSmallScreen,
+}: CopyPastedRecoveryPhraseProps) => {
   const isCopyPastedPhrase = useSelector(
     (state: RootState) => state.keyGeneration.isCopyPastedPhrase,
   )

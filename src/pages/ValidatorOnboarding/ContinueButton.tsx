@@ -120,7 +120,9 @@ const ContinueButton = () => {
 
   return (
     <YStack style={{ width: '100%' }}>
-      {windowSize.width < 1155 && <CopyPastedRecoveryPhrase isSmallScreen={true} />}
+      {windowSize.width < 1155 && (
+        <CopyPastedRecoveryPhrase isSmallScreen={true} />
+      )}
       <XStack
         style={{
           width: '100%',

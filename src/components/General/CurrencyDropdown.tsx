@@ -18,7 +18,11 @@ const CurrencyDropdown = ({ changeCurrency }: CurrencyDropdownProps) => {
 
   return (
     <DropdownMenu onOpenChange={changeIsOpenHandler}>
-      <Button variant="ghost" size={24} icon={<ChevronIcon isOpen={isOpen} />} />
+      <Button
+        variant="ghost"
+        size={24}
+        icon={<ChevronIcon isOpen={isOpen} />}
+      />
       <DropdownMenu.Content width={63} side="bottom" zIndex={999}>
         {Object.keys(CURRENCIES).map(currency => (
           <DropdownMenu.Item
