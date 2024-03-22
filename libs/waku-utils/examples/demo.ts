@@ -7,7 +7,7 @@ import * as utils from '@waku/utils/bytes'
 import { getPairingObject, proceedHandshake } from 'waku-utils/src/waku-utils'
 import { NoiseSecureMessage } from '@waku/noise/dist/codec'
 
-debug.enable('nimbus-gui:*')
+debug.enable('nimbus-gui:*,waku:*')
 
 const log = debug('nimbus-gui:waku:demo')
 
@@ -27,6 +27,10 @@ async function startNode() {
   )
 
   writeFileSync(process.env['QR_PATH']!, pInfo.qrCode)
+
+  console.log(
+    `./build/status_node_manager waku pair --qr=${pInfo.qrCode} --qr-message-nametag=${utils.bytesToHex(pInfo.qrMessageNameTag)}`,
+  )
 
   const { decoder } = await proceedHandshake(pairingObj)
 
