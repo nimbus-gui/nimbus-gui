@@ -1,6 +1,6 @@
 import { Stack } from 'tamagui'
 import ValidatorDataCard from './ValidatorDataCard'
-import ValidatorPeersCard from './ValidatorPeersCard'
+import ValidatorPeersCard from '../ValidatorPeersCard'
 
 const ValidatorDataCards = () => {
   return (
