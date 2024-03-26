@@ -11,7 +11,7 @@ import ValidatorDataCards from './ValidatorDataCards/ValidatorDataCards'
 import ValidatorDataTabs from './ManageValidatorTable/ValidatorDataTabs'
 import ValidatorGraffiti from './ValidatorGraffiti'
 import Footer from './Footer/Footer'
-import ValidatorSettingsCards from './ValidatorSeettingsCards'
+import ValidatorSettingsCards from '../ValidatorSettings/ValidatorSettingsCards'
 
 const ManageValidator = () => {
   return (
