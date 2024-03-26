@@ -2,7 +2,7 @@ import { Stack, XStack, YStack } from 'tamagui'
 
 import DepositStatusPieChart from './DepositStatusPieChart'
 import { Text } from '@status-im/components'
-import DepositStepper from './DepositStepper'
+import DepositStepper from '../DepositStepper'
 
 const depositStatusData = [
   {

@@ -4,7 +4,7 @@ import { Stack } from 'tamagui'
 
 import RightManageSettings from './RightManageSettings/RightManageSettings'
 import ValidatorInfo from './ValidatorInfo'
-import DepositStatus from './DepositStatus'
+import DepositStatus from './DepositStatus/DepositStatus'
 import Header from './Header'
 import ValidatorBalance from './ValidatorBalance'
 import ValidatorDataCards from './ValidatorDataCards'
