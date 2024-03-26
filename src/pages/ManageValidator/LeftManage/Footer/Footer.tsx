@@ -1,12 +1,16 @@
 import { Text as TextStat } from '@status-im/components'
-import { ExternalIcon } from '@status-im/icons'
+
 import { Text, XStack } from 'tamagui'
-
+import { ExternalIcon } from '@status-im/icons'
 import Icon from '../../../../components/General/Icon'
-
 const Footer = () => {
   return (
-    <XStack justifyContent="space-between">
+    <XStack
+      justifyContent="space-between"
+      marginLeft="30px"
+      padding="10px"
+      marginRight="20px"
+    >
       <Text
         color="#2F80ED"
         fontSize={15}

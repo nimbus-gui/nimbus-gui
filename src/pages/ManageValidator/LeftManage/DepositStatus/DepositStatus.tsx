@@ -1,7 +1,7 @@
 import { Stack, XStack, YStack } from 'tamagui'
-import { Text } from '@status-im/components'
 
 import DepositStatusPieChart from './DepositStatusPieChart'
+import { Text } from '@status-im/components'
 import DepositStepper from './DepositStepper'
 
 const depositStatusData = [
@@ -29,29 +29,30 @@ const DepositStatus = () => {
       backgroundColor="#fff"
       borderRadius="$10"
       marginTop="0px"
+      marginLeft="30px"
+      marginRight="20px"
       padding="10px"
       paddingBottom="0px"
       justifyContent="space-between"
     >
       <XStack space="$3">
-        <Stack width={'50px'} height={'50px'}>
+        <Stack width={'40px'} height={'40px'}>
           <DepositStatusPieChart
             data={depositStatusData}
             isInteractive={false}
           />
         </Stack>
-        <YStack space={'$2'}>
-          <Text size={13} color="#647084">
+        <YStack>
+          <Text size={11} color="#647084">
             Status
           </Text>
-          <Text size={13} color="#E95460" weight={'semibold'}>
+          <Text size={11} color="#E95460" weight={'semibold'}>
             Requires Deposit
           </Text>
         </YStack>
       </XStack>
-      <DepositStepper activeStep={1} />
+      <DepositStepper activeStep={1}></DepositStepper>
     </XStack>
   )
 }
-
 export default DepositStatus

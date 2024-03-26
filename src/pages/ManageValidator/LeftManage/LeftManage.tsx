@@ -3,28 +3,27 @@ import { YStack } from 'tamagui'
 import { InformationBox } from '@status-im/components'
 import { CloseCircleIcon } from '@status-im/icons'
 
-import Header from './PageParts/Header'
+import Header from './Header/Header'
 import ValidatorDataCards from './ValidatorDataCards/ValidatorDataCards'
 import ValidatorSettingsCards from './ValidatorSettingsCards/ValidatorSettingsCards'
 import ValidatorGraffiti from './ValidatorGraffiti/ValidatorGraffiti'
 import ValidatorDataTabs from './ManageValidatorTable/ValidatorDataTabs'
 import ValidatorBlueSection from './ValidatorBlueSection/ValidatorBlueSection'
-import Footer from './PageParts/Footer'
-
+import Footer from './Footer/Footer'
 const LeftManage = () => {
-  const [isVisibleWarning, setIsVisibleWarning] = useState(true)
+  const [isVisibleWarning, setIsVisibleWarning] = useState(false)
 
   return (
     <YStack
       width={'50%'}
       maxWidth="50%"
       flexGrow={1}
-      space={'$3'}
+      space={'$2'}
       style={{ borderRight: '1px solid #DCE0E5' }}
     >
       <Header />
       <ValidatorBlueSection />
-      <YStack space={'$3'} style={{ padding: '15px 15px 30px 30px' }}>
+      <YStack space={'$3'}>
         <ValidatorDataCards />
         <ValidatorSettingsCards />
         <ValidatorGraffiti />

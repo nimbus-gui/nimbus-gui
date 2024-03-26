@@ -1,9 +1,9 @@
 import { Stack } from 'tamagui'
 import { MANAGE_VALIDATOR_TABS } from '../../../../constants'
+import ValidatorTable from './ValidatorTable'
 import { Tabs } from '@status-im/components'
 import { useDispatch, useSelector } from 'react-redux'
 
-import ValidatorTable from './ValidatorTable'
 import { RootState } from '../../../../redux/store'
 import { setCurrentTab } from '../../../../redux/ManageValidatorTab/slice'
 
@@ -13,7 +13,7 @@ const ValidatorDataTabs = () => {
     (state: RootState) => state.manageValidatorTab.currentTab,
   )
   return (
-    <Stack>
+    <Stack marginLeft="30px">
       <Tabs
         defaultValue={'' + MANAGE_VALIDATOR_TABS[currentTab]}
         onValueChange={(value: string) =>
@@ -21,7 +21,10 @@ const ValidatorDataTabs = () => {
         }
       >
         <div className="tabs transparent-scrollbar">
-          <Stack style={{ cursor: 'pointer', margin: '8px 0' }}>
+          <Stack
+            maxWidth={'120px'}
+            style={{ cursor: 'pointer', margin: '8px 0' }}
+          >
             <Tabs.List size={32} variant="grey">
               {MANAGE_VALIDATOR_TABS.map((tab, index) => (
                 <Tabs.Trigger key={index} type="default" value={tab}>
@@ -32,7 +35,7 @@ const ValidatorDataTabs = () => {
           </Stack>
         </div>
         {MANAGE_VALIDATOR_TABS.map(tab => (
-          <Tabs.Content key={tab} value={tab}>
+          <Tabs.Content key={tab} value={tab} style={{ marginTop: '8px' }}>
             <ValidatorTable />
           </Tabs.Content>
         ))}

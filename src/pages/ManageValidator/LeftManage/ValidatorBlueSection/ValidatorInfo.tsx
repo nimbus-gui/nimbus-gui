@@ -1,13 +1,11 @@
 import { XStack, YStack } from 'tamagui'
+import ValidatorNameAddress from '../../../../components/General/ValidatorNameAddress'
 import { Avatar, Text } from '@status-im/components'
 import { ChevronLeftIcon, ChevronRightIcon } from '@status-im/icons'
-
-import ValidatorNameAddress from '../../../../components/General/ValidatorNameAddress'
 import Icon from '../../../../components/General/Icon'
-
 const ValidatorInfo = () => {
   return (
-    <XStack space={'$2'} justifyContent="space-between">
+    <XStack space={'$2'} padding="30px" justifyContent="space-between">
       <XStack space="$2">
         <Avatar
           type="user"

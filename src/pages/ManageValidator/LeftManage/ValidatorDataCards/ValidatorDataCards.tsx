@@ -1,5 +1,4 @@
 import { Stack } from 'tamagui'
-
 import ValidatorDataCard from './ValidatorDataCard'
 import ValidatorPeersCard from './ValidatorPeersCard'
 
@@ -12,9 +11,10 @@ const ValidatorDataCards = () => {
         flexWrap: 'wrap',
         gap: '1vw',
         width: '100%',
+        padding: '0 30px',
       }}
     >
-      <ValidatorPeersCard title="Peers" value="67" />
+      <ValidatorPeersCard title="Peers" value="67"></ValidatorPeersCard>
       <ValidatorDataCard title="Slots Behind" value={19} iconPath="ghost.png" />
       <ValidatorDataCard
         title="Blocks"

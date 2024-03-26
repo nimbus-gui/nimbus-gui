@@ -1,8 +1,9 @@
 import { Stepper, Step } from 'react-form-stepper'
 import { useNavigate } from 'react-router-dom'
-import { DepositStatusSteps, FORM_STEPS } from '../../../../../constants'
-import { useWindowSize } from '../../../../../hooks/useWindowSize'
+import { useWindowSize } from '../../../../hooks/useWindowSize'
 import styles from './DepositStepper.module.css'
+import { FORM_STEPS, DepositStatusSteps } from '../../../../constants'
+
 type DepositStepperProps = {
   activeStep: number
 }
@@ -12,7 +13,9 @@ const DepositStepper = ({ activeStep }: DepositStepperProps) => {
   const windowSize = useWindowSize()
 
   const stepToUrlMap = [
-    'deposit',
+    '/validator-management/',
+    '/validator-management/',
+    '/validator-management/',
     // fix paths
   ]
 
