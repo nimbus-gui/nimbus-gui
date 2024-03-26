@@ -3,7 +3,7 @@ import { XStack, YStack } from 'tamagui'
 import { Stack } from 'tamagui'
 
 import RightManageSettings from './RightManageSettings/RightManageSettings'
-import ValidatorInfo from './ValidatorInfo'
+import ValidatorInfo from './ValidatorInfo/ValidatorInfo'
 import DepositStatus from './DepositStatus/DepositStatus'
 import Header from './Header/Header'
 import ValidatorBalance from './ValidatorBalance/ValidatorBalance'
