@@ -9,7 +9,7 @@ import Header from './Header/Header'
 import ValidatorBalance from './ValidatorBalance/ValidatorBalance'
 import ValidatorDataCards from './ValidatorDataCards/ValidatorDataCards'
 import ValidatorDataTabs from './ManageValidatorTable/ValidatorDataTabs'
-import ValidatorGraffiti from './ValidatorGraffiti'
+import ValidatorGraffiti from './ValidatorGraffiti/ValidatorGraffiti'
 import Footer from './Footer/Footer'
 import ValidatorSettingsCards from '../ValidatorSettings/ValidatorSettingsCards'
 
