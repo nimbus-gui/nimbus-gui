@@ -10,7 +10,7 @@ import ValidatorBalance from './ValidatorBalance'
 import ValidatorDataCards from './ValidatorDataCards'
 import ValidatorDataTabs from './ManageValidatorTable/ValidatorDataTabs'
 import ValidatorGraffiti from './ValidatorGraffiti'
-import Footer from './Footer'
+import Footer from './Footer/Footer'
 import ValidatorSettingsCards from './ValidatorSeettingsCards'
 
 const ManageValidator = () => {
