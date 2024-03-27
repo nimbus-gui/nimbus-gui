@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
 import ValidatorInfo from './ValidatorInfo'
+import { withRouter } from 'storybook-addon-react-router-v6'
 
 const meta = {
   title: 'Manage Validator/ValidatorInfo',
@@ -9,6 +10,7 @@ const meta = {
     layout: 'centered',
   },
   tags: ['autodocs'],
+  decorators:[withRouter]
 } satisfies Meta<typeof ValidatorInfo>
 
 export default meta
