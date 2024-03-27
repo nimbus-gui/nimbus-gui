@@ -6,7 +6,7 @@ import ValidatorBalance from './ValidatorBalance'
 
 const ValidatorBlueSection = () => {
   return (
-    <YStack backgroundColor="#F4F6FE">
+    <YStack backgroundColor="#F4F6FE" space={'$2'}>
       <ValidatorInfo />
       <DepositStatus />
       <ValidatorBalance />
