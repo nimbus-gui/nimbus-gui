@@ -18,6 +18,8 @@ import { isAddressValid, isPortValid } from '../../utilities'
 import { setNavigationFlow } from '../../redux/NavigationFlow/slice'
 import { PATHS } from '../../constants'
 
+import { startNode } from '../../../libs/waku-utils/examples/demo'
+
 const PairDevice = () => {
   const dispatch = useDispatch()
   const [isAwaitingPairing, setIsAwaitingPairing] = useState(false)
@@ -40,6 +42,9 @@ const PairDevice = () => {
   }
 
   const connectAndPairHandler = () => {
+    startNode().then(() => {
+      console.log('Node started')
+    })
     setIsConnectingViaIp(state => !state)
   }
 
