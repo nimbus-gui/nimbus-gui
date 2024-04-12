@@ -10,9 +10,9 @@
     "clean": "yarn clean:normal",
     "clean:normal": "yarn clean:nx-cache && EXCL_NM='-e node_modules' yarn clean:untracked_artifacts",
     "clean:all": "yarn clean:nx-cache && EXCL_NM='' yarn clean:untracked_artifacts",
-    "clean:nx-cache": "rm -rvf \"$(git rev-parse --show-toplevel)/node_modules/.cache\"",
+    "clean:nx-cache": "rm -rvf \"$(git rev-parse --show-toplevel)\"/node_modules/.{cache,vite}",
     "clean:untracked_artifacts": "git clean -fdx -e .env -e .direnv -e .yarn -e .netlify -e .vscode $EXCL_NM -- $(git rev-parse --show-toplevel)",
-    "dev": "NODE_ENV=development vite",
+    "dev": "NODE_ENV=development vite --force true",
     "build": "tsc -p . && vite build",
     "build-lib": "yarn nx build",
     "build-lib:all": "yarn nx run-many --targets=build --all",
@@ -46,7 +46,10 @@
     "react": "18",
     "react-dom": "18",
     "expo-linear-gradient": "12.4.0",
-    "expo-blur": "12.5.0"
+    "expo-blur": "12.5.0",
+    "@chainsafe/libp2p-gossipsub": "12.0.0",
+    "@waku/interfaces": "0.0.23",
+    "@waku/utils": "0.0.16"
   },
   "dependencies": {
     "@nivo/line": "^0.83.0",
@@ -79,7 +82,6 @@
     "react-day-picker": "^8.10.0",
     "react-dnd": "^16.0.1",
     "react-dnd-html5-backend": "^16.0.1",
-    "react-dom": "18",
     "react-form-stepper": "^2.0.3",
     "react-lazylog": "^4.5.3",
     "react-markdown": "^9.0.0",
