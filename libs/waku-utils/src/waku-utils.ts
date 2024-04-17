@@ -18,17 +18,13 @@ import { CustomHandshakeResult } from './handshake'
 
 const log = debug('nimbus-gui:waku:utils')
 
-export function getPairingObject(node: LightNode): WakuPairing {
-  const dhKey = new X25519DHKey()
-  const rng = new HMACDRBG()
-
-  const nimbusGUIStaticKey = dhKey.generateKeyPair()
-
-  const applicationName = 'nimbus-gui'
-  const applicationVersion = '0.0.0'
-  const shardIdAsBytes = randomBytes(16, rng)
-  const shardId = bytesToHex(shardIdAsBytes)
-
+export function getPairingObject(
+  node: LightNode,
+  nimbusGUIStaticKey: any,
+  applicationName: any,
+  applicationVersion: any,
+  shardId: any,
+): WakuPairing {
   const pairingObj = new WakuPairing(
     node.lightPush,
     node.filter,
