@@ -5185,6 +5185,79 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@protobufjs/aspromise@npm:^1.1.1, @protobufjs/aspromise@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "@protobufjs/aspromise@npm:1.1.2"
+  checksum: 10/8a938d84fe4889411296db66b29287bd61ea3c14c2d23e7a8325f46a2b8ce899857c5f038d65d7641805e6c1d06b495525c7faf00c44f85a7ee6476649034969
+  languageName: node
+  linkType: hard
+
+"@protobufjs/base64@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "@protobufjs/base64@npm:1.1.2"
+  checksum: 10/c71b100daeb3c9bdccab5cbc29495b906ba0ae22ceedc200e1ba49717d9c4ab15a6256839cebb6f9c6acae4ed7c25c67e0a95e734f612b258261d1a3098fe342
+  languageName: node
+  linkType: hard
+
+"@protobufjs/codegen@npm:^2.0.4":
+  version: 2.0.4
+  resolution: "@protobufjs/codegen@npm:2.0.4"
+  checksum: 10/c6ee5fa172a8464f5253174d3c2353ea520c2573ad7b6476983d9b1346f4d8f2b44aa29feb17a949b83c1816bc35286a5ea265ed9d8fdd2865acfa09668c0447
+  languageName: node
+  linkType: hard
+
+"@protobufjs/eventemitter@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "@protobufjs/eventemitter@npm:1.1.0"
+  checksum: 10/03af3e99f17ad421283d054c88a06a30a615922a817741b43ca1b13e7c6b37820a37f6eba9980fb5150c54dba6e26cb6f7b64a6f7d8afa83596fafb3afa218c3
+  languageName: node
+  linkType: hard
+
+"@protobufjs/fetch@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "@protobufjs/fetch@npm:1.1.0"
+  dependencies:
+    "@protobufjs/aspromise": "npm:^1.1.1"
+    "@protobufjs/inquire": "npm:^1.1.0"
+  checksum: 10/67ae40572ad536e4ef94269199f252c024b66e3059850906bdaee161ca1d75c73d04d35cd56f147a8a5a079f5808e342b99e61942c1dae15604ff0600b09a958
+  languageName: node
+  linkType: hard
+
+"@protobufjs/float@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "@protobufjs/float@npm:1.0.2"
+  checksum: 10/634c2c989da0ef2f4f19373d64187e2a79f598c5fb7991afb689d29a2ea17c14b796b29725945fa34b9493c17fb799e08ac0a7ccaae460ee1757d3083ed35187
+  languageName: node
+  linkType: hard
+
+"@protobufjs/inquire@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "@protobufjs/inquire@npm:1.1.0"
+  checksum: 10/c09efa34a5465cb120775e1a482136f2340a58b4abce7e93d72b8b5a9324a0e879275016ef9fcd73d72a4731639c54f2bb755bb82f916e4a78892d1d840bb3d2
+  languageName: node
+  linkType: hard
+
+"@protobufjs/path@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "@protobufjs/path@npm:1.1.2"
+  checksum: 10/bb709567935fd385a86ad1f575aea98131bbd719c743fb9b6edd6b47ede429ff71a801cecbd64fc72deebf4e08b8f1bd8062793178cdaed3713b8d15771f9b83
+  languageName: node
+  linkType: hard
+
+"@protobufjs/pool@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "@protobufjs/pool@npm:1.1.0"
+  checksum: 10/b9c7047647f6af28e92aac54f6f7c1f7ff31b201b4bfcc7a415b2861528854fce3ec666d7e7e10fd744da905f7d4aef2205bbcc8944ca0ca7a82e18134d00c46
+  languageName: node
+  linkType: hard
+
+"@protobufjs/utf8@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "@protobufjs/utf8@npm:1.1.0"
+  checksum: 10/131e289c57534c1d73a0e55782d6751dd821db1583cb2f7f7e017c9d6747addaebe79f28120b2e0185395d990aad347fb14ffa73ef4096fa38508d61a0e64602
+  languageName: node
+  linkType: hard
+
 "@radix-ui/number@npm:1.0.1":
   version: 1.0.1
   resolution: "@radix-ui/number@npm:1.0.1"
@@ -10043,6 +10116,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/long@npm:^4.0.1":
+  version: 4.0.2
+  resolution: "@types/long@npm:4.0.2"
+  checksum: 10/68afa05fb20949d88345876148a76f6ccff5433310e720db51ac5ca21cb8cc6714286dbe04713840ddbd25a8b56b7a23aa87d08472fabf06463a6f2ed4967707
+  languageName: node
+  linkType: hard
+
 "@types/mdast@npm:^4.0.0":
   version: 4.0.3
   resolution: "@types/mdast@npm:4.0.3"
@@ -10131,6 +10211,15 @@ __metadata:
   version: 18.7.1
   resolution: "@types/node@npm:18.7.1"
   checksum: 10/7f8a92c56924a9bc8328e424d012dbda538c936685952750bed3b1e739491da3ee377354a3ea2dad6fb168a8d43430e788635c3000fbcca71d324618e0ec2804
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:>=13.7.0":
+  version: 20.12.7
+  resolution: "@types/node@npm:20.12.7"
+  dependencies:
+    undici-types: "npm:~5.26.4"
+  checksum: 10/b4a28a3b593a9bdca5650880b6a9acef46911d58cf7cfa57268f048e9a7157a7c3196421b96cea576850ddb732e3b54bc982c8eb5e1e5ef0635d4424c2fce801
   languageName: node
   linkType: hard
 
@@ -11025,36 +11114,95 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@waku/discovery@npm:0.0.1":
-  version: 0.0.1
-  resolution: "@waku/discovery@npm:0.0.1"
+"@waku/core@npm:0.0.29-a7bf4fd.0":
+  version: 0.0.29-a7bf4fd.0
+  resolution: "@waku/core@npm:0.0.29-a7bf4fd.0"
   dependencies:
-    "@waku/core": "npm:0.0.28"
-    "@waku/enr": "npm:0.0.22"
-    "@waku/interfaces": "npm:0.0.23"
-    "@waku/proto": "npm:^0.0.6"
-    "@waku/utils": "npm:0.0.16"
+    "@libp2p/ping": "npm:^1.0.12"
+    "@waku/enr": "npm:0.0.23-a7bf4fd.0"
+    "@waku/interfaces": "npm:0.0.24-a7bf4fd.0"
+    "@waku/message-hash": "npm:0.1.13-a7bf4fd.0"
+    "@waku/proto": "npm:0.0.7-a7bf4fd.0"
+    "@waku/utils": "npm:0.0.17-a7bf4fd.0"
+    debug: "npm:^4.3.4"
+    it-all: "npm:^3.0.4"
+    it-length-prefixed: "npm:^9.0.4"
+    it-pipe: "npm:^3.0.1"
+    p-event: "npm:^6.0.1"
+    uint8arraylist: "npm:^2.4.3"
+    uuid: "npm:^9.0.0"
+  peerDependencies:
+    "@multiformats/multiaddr": ^12.0.0
+    "@waku/enr": 0.0.23-a7bf4fd.0
+    "@waku/interfaces": 0.0.24-a7bf4fd.0
+    "@waku/message-hash": 0.1.13-a7bf4fd.0
+    "@waku/proto": 0.0.7-a7bf4fd.0
+    "@waku/utils": 0.0.17-a7bf4fd.0
+    libp2p: ^1.1.2
+  peerDependenciesMeta:
+    "@multiformats/multiaddr":
+      optional: true
+    "@waku/interfaces":
+      optional: true
+  checksum: 10/99c9cfb5d038a3b3800c7eb9cea3bb397329459765609e48aa1b06d06a9d045619e328a8d454e6f4db8ba77d3f80ac8c122cdee567496fc83a2f8fb12b41aa6c
+  languageName: node
+  linkType: hard
+
+"@waku/discovery@npm:0.0.2-a7bf4fd.0":
+  version: 0.0.2-a7bf4fd.0
+  resolution: "@waku/discovery@npm:0.0.2-a7bf4fd.0"
+  dependencies:
+    "@waku/core": "npm:0.0.29-a7bf4fd.0"
+    "@waku/enr": "npm:0.0.23-a7bf4fd.0"
+    "@waku/interfaces": "npm:0.0.24-a7bf4fd.0"
+    "@waku/proto": "npm:0.0.7-a7bf4fd.0"
+    "@waku/utils": "npm:0.0.17-a7bf4fd.0"
     debug: "npm:^4.3.4"
     dns-query: "npm:^0.11.2"
     hi-base32: "npm:^0.5.1"
     uint8arrays: "npm:^5.0.1"
   peerDependencies:
     "@libp2p/interface": ^1.1.2
-    "@waku/core": 0.0.27
-    "@waku/enr": 0.0.21
-    "@waku/interfaces": 0.0.22
-    "@waku/proto": 0.0.6
-    "@waku/utils": 0.0.15
+    "@waku/core": 0.0.29-a7bf4fd.0
+    "@waku/enr": 0.0.23-a7bf4fd.0
+    "@waku/interfaces": 0.0.24-a7bf4fd.0
+    "@waku/proto": 0.0.7-a7bf4fd.0
+    "@waku/utils": 0.0.17-a7bf4fd.0
   peerDependenciesMeta:
     "@libp2p/interface":
       optional: true
     "@waku/interfaces":
       optional: true
-  checksum: 10/8ee399e7e50e10a9c4074155a43c948b01d34be371022601546ad2b2253c4492759ad21a1de8cad81c6ed1f1ac8828134ae40c726b2ce1a13461050c22dc01a8
+  checksum: 10/1d930eaa53ec6e486b973e8060c051af063e0f22d1e79c657ade9bab79a011525add00b4ac80125432d49f5dc6e7385d180f8e0181bf3da00c943653c0333549
   languageName: node
   linkType: hard
 
-"@waku/enr@npm:0.0.22, @waku/enr@npm:^0.0.22":
+"@waku/enr@npm:0.0.23-a7bf4fd.0":
+  version: 0.0.23-a7bf4fd.0
+  resolution: "@waku/enr@npm:0.0.23-a7bf4fd.0"
+  dependencies:
+    "@ethersproject/rlp": "npm:^5.7.0"
+    "@libp2p/crypto": "npm:^4.0.0"
+    "@libp2p/peer-id": "npm:^4.0.4"
+    "@multiformats/multiaddr": "npm:^12.0.0"
+    "@noble/secp256k1": "npm:^1.7.1"
+    "@waku/utils": "npm:0.0.17-a7bf4fd.0"
+    debug: "npm:^4.3.4"
+    js-sha3: "npm:^0.9.2"
+  peerDependencies:
+    "@multiformats/multiaddr": ^12.0.0
+    "@waku/interfaces": 0.0.24-a7bf4fd.0
+    "@waku/utils": 0.0.17-a7bf4fd.0
+  peerDependenciesMeta:
+    "@multiformats/multiaddr":
+      optional: true
+    "@waku/interfaces":
+      optional: true
+  checksum: 10/9d6989856b8eef42362c06811740a88694bb0ce28f4e4b0d0c175bc9111b416c787aab0baa870d71fdb6ba7faa489cdc3f214d3fa3b2e4e60521dfe4ff77a00c
+  languageName: node
+  linkType: hard
+
+"@waku/enr@npm:^0.0.22":
   version: 0.0.22
   resolution: "@waku/enr@npm:0.0.22"
   dependencies:
@@ -11088,6 +11236,46 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@waku/message-encryption@npm:0.0.27-a7bf4fd.0":
+  version: 0.0.27-a7bf4fd.0
+  resolution: "@waku/message-encryption@npm:0.0.27-a7bf4fd.0"
+  dependencies:
+    "@noble/secp256k1": "npm:^1.7.1"
+    "@waku/core": "npm:0.0.29-a7bf4fd.0"
+    "@waku/interfaces": "npm:0.0.24-a7bf4fd.0"
+    "@waku/proto": "npm:0.0.7-a7bf4fd.0"
+    "@waku/utils": "npm:0.0.17-a7bf4fd.0"
+    debug: "npm:^4.3.4"
+    js-sha3: "npm:^0.9.2"
+    uint8arrays: "npm:^5.0.1"
+  peerDependencies:
+    "@waku/core": 0.0.29-a7bf4fd.0
+    "@waku/interfaces": 0.0.24-a7bf4fd.0
+    "@waku/proto": 0.0.7-a7bf4fd.0
+    "@waku/utils": 0.0.17-a7bf4fd.0
+  peerDependenciesMeta:
+    "@waku/interfaces":
+      optional: true
+  checksum: 10/d2d65b1e93172f01b40d51e95396b4a84bc338e3335f419c81ee547af9ba8934896f6f354311d4b1725e9110c46a585a7cae5391a7564959cdc3725562022c37
+  languageName: node
+  linkType: hard
+
+"@waku/message-hash@npm:0.1.13-a7bf4fd.0":
+  version: 0.1.13-a7bf4fd.0
+  resolution: "@waku/message-hash@npm:0.1.13-a7bf4fd.0"
+  dependencies:
+    "@noble/hashes": "npm:^1.3.2"
+    "@waku/utils": "npm:0.0.17-a7bf4fd.0"
+  peerDependencies:
+    "@waku/interfaces": 0.0.24-a7bf4fd.0
+    "@waku/utils": 0.0.17-a7bf4fd.0
+  peerDependenciesMeta:
+    "@waku/interfaces":
+      optional: true
+  checksum: 10/15b3d0f9a57f6d44ca5597968804034371b73328b924197082c5d4efba3f49c9e678577d74cbb7542b657b07a2bca2d4970f505adcaeed305df9653beb138c4b
+  languageName: node
+  linkType: hard
+
 "@waku/message-hash@npm:^0.1.12":
   version: 0.1.12
   resolution: "@waku/message-hash@npm:0.1.12"
@@ -11104,9 +11292,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@waku/noise@npm:0.0.3-da1f593":
-  version: 0.0.3-da1f593
-  resolution: "@waku/noise@npm:0.0.3-da1f593"
+"@waku/noise@npm:0.0.3-814512c":
+  version: 0.0.3-814512c
+  resolution: "@waku/noise@npm:0.0.3-814512c"
   dependencies:
     "@stablelib/chacha20poly1305": "npm:^1.0.1"
     "@stablelib/hkdf": "npm:^1.0.1"
@@ -11116,13 +11304,14 @@ __metadata:
     "@stablelib/x25519": "npm:^1.0.1"
     "@waku/core": "npm:0.0.28"
     "@waku/proto": "npm:0.0.6"
+    "@waku/utils": "npm:^0.0.16"
     bn.js: "npm:^5.2.1"
     eventemitter3: "npm:^5.0.0"
     p-event: "npm:^5.0.1"
     pkcs7-padding: "npm:^0.1.1"
     uint8arraylist: "npm:^2.3.2"
     uint8arrays: "npm:^4.0.2"
-  checksum: 10/54b53aa48af03f388a39a8bd8f47cea3ea0537ecf358a07fe39419233a2e15e6a5f86223d0b0bb4002a8b21f059e441d9f123bf37cf3854987bf5ccbdefcaab9
+  checksum: 10/220938c2c1cc5a3db34aa107b90b51e9f0e05c4f16b502dc5ff3bcaf62b7c8ab060c41d476f2da24424ca931a75edc6712caa905cb0aefe421ae3ed2a8f44b31
   languageName: node
   linkType: hard
 
@@ -11135,37 +11324,60 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@waku/relay@npm:0.0.11":
-  version: 0.0.11
-  resolution: "@waku/relay@npm:0.0.11"
+"@waku/proto@npm:0.0.7-a7bf4fd.0":
+  version: 0.0.7-a7bf4fd.0
+  resolution: "@waku/proto@npm:0.0.7-a7bf4fd.0"
+  dependencies:
+    protons-runtime: "npm:^5.4.0"
+  checksum: 10/20e2c760d87fdd7dfa158106b777a5e66dfc2c290fc7f64250c3b502777717b273335147ba66c9ed57ed4b6196653320f4fd3051f2153be6a6de67add2fb2b8c
+  languageName: node
+  linkType: hard
+
+"@waku/react-native-polyfills@npm:0.0.2-a7bf4fd.0":
+  version: 0.0.2-a7bf4fd.0
+  resolution: "@waku/react-native-polyfills@npm:0.0.2-a7bf4fd.0"
+  dependencies:
+    event-target-polyfill: "npm:^0.0.4"
+    react-native-url-polyfill: "npm:^2.0.0"
+    text-encoding-polyfill: "npm:^0.6.7"
+  peerDependencies:
+    expo: ~50.0.13
+    react-native: 0.73.6
+  checksum: 10/56a9b66298a9816e18bc0180ee50ce82213dfcc4a7a32162931848ea075038ddfdd01741f41da56e8a1bfdb5aaa80c3e7db5d40a07c10e6f627e183361f1b469
+  languageName: node
+  linkType: hard
+
+"@waku/relay@npm:0.0.12-a7bf4fd.0":
+  version: 0.0.12-a7bf4fd.0
+  resolution: "@waku/relay@npm:0.0.12-a7bf4fd.0"
   dependencies:
     "@chainsafe/libp2p-gossipsub": "npm:^12.0.0"
     "@noble/hashes": "npm:^1.3.2"
-    "@waku/core": "npm:0.0.28"
-    "@waku/interfaces": "npm:0.0.23"
-    "@waku/proto": "npm:0.0.6"
-    "@waku/utils": "npm:0.0.16"
+    "@waku/core": "npm:0.0.29-a7bf4fd.0"
+    "@waku/interfaces": "npm:0.0.24-a7bf4fd.0"
+    "@waku/proto": "npm:0.0.7-a7bf4fd.0"
+    "@waku/utils": "npm:0.0.17-a7bf4fd.0"
     chai: "npm:^4.3.10"
     debug: "npm:^4.3.4"
     fast-check: "npm:^3.15.1"
   peerDependencies:
     "@chainsafe/libp2p-gossipsub": ^12.0.0
-    "@waku/core": 0.0.27
-    "@waku/interfaces": 0.0.22
-    "@waku/proto": 0.0.6
-    "@waku/utils": 0.0.15
+    "@waku/core": 0.0.29-a7bf4fd.0
+    "@waku/interfaces": 0.0.24-a7bf4fd.0
+    "@waku/proto": 0.0.7-a7bf4fd.0
+    "@waku/utils": 0.0.17-a7bf4fd.0
   peerDependenciesMeta:
     "@chainsafe/libp2p-gossipsub":
       optional: true
     "@waku/interfaces":
       optional: true
-  checksum: 10/fa8add4304755fb58737e1000241dbb8a6df933260740bb256544583f1a762866ad49747c44f46093dbb602964ddd67027c30214867f1f296632ea9e6be3572c
+  checksum: 10/b560e1bce6e341cd355a00820b4d7eb16e8fbe2b7489ad715f38b07c371eaaebe81e764bbc82bac1576bd077bc9d6f3c0b9fe676fa95d70a026ad56506bde5be
   languageName: node
   linkType: hard
 
-"@waku/sdk@npm:0.0.24":
-  version: 0.0.24
-  resolution: "@waku/sdk@npm:0.0.24"
+"@waku/sdk@npm:0.0.25-a7bf4fd.0":
+  version: 0.0.25-a7bf4fd.0
+  resolution: "@waku/sdk@npm:0.0.25-a7bf4fd.0"
   dependencies:
     "@chainsafe/libp2p-noise": "npm:^14.1.0"
     "@libp2p/bootstrap": "npm:^10.0.16"
@@ -11174,24 +11386,24 @@ __metadata:
     "@libp2p/ping": "npm:^1.0.12"
     "@libp2p/websockets": "npm:^8.0.11"
     "@noble/hashes": "npm:^1.3.3"
-    "@waku/core": "npm:0.0.28"
-    "@waku/discovery": "npm:0.0.1"
-    "@waku/interfaces": "npm:0.0.23"
-    "@waku/relay": "npm:0.0.11"
-    "@waku/utils": "npm:0.0.16"
+    "@waku/core": "npm:0.0.29-a7bf4fd.0"
+    "@waku/discovery": "npm:0.0.2-a7bf4fd.0"
+    "@waku/interfaces": "npm:0.0.24-a7bf4fd.0"
+    "@waku/relay": "npm:0.0.12-a7bf4fd.0"
+    "@waku/utils": "npm:0.0.17-a7bf4fd.0"
     libp2p: "npm:^1.1.2"
   peerDependencies:
     "@libp2p/bootstrap": ^10
-    "@waku/core": 0.0.27
-    "@waku/interfaces": 0.0.22
-    "@waku/relay": 0.0.10
-    "@waku/utils": 0.0.15
+    "@waku/core": 0.0.29-a7bf4fd.0
+    "@waku/interfaces": 0.0.24-a7bf4fd.0
+    "@waku/relay": 0.0.12-a7bf4fd.0
+    "@waku/utils": 0.0.17-a7bf4fd.0
   peerDependenciesMeta:
     "@libp2p/bootstrap":
       optional: true
     "@waku/interfaces":
       optional: true
-  checksum: 10/fb78a9df46711a75c94d3f9a102dbb80a5da7775891d6313a1e97b991b86f7cff62d138e883ea75f25f2057420c142139a1706132a6c2e7e218ddb0a0985da58
+  checksum: 10/2053028284906d3f1337d6176337f7f9cada131eaaae1221d245ad81636e9943f2c66b61f81628e254533c91cdafa16031f0378681c6073eefb4d8dc75e69d19
   languageName: node
   linkType: hard
 
@@ -12982,7 +13194,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"buffer@npm:^5.5.0":
+"buffer@npm:^5.4.3, buffer@npm:^5.5.0":
   version: 5.7.1
   resolution: "buffer@npm:5.7.1"
   dependencies:
@@ -16193,6 +16405,13 @@ __metadata:
   version: 2.0.0
   resolution: "event-iterator@npm:2.0.0"
   checksum: 10/52f041696b6f99f3c09725b5d5de25189479d26ad0f30e33dd6bea5eb4a1df9894f7c7663ce5335a5e0e77d32ffae9dbca1d6ef0db87d7c173d683a3ff94857b
+  languageName: node
+  linkType: hard
+
+"event-target-polyfill@npm:^0.0.4":
+  version: 0.0.4
+  resolution: "event-target-polyfill@npm:0.0.4"
+  checksum: 10/465f7abfc7d4716365cae732f6940732b0c48315358b228df80d13c85d1b55f2ff8c02c6c98bd1d474fe9e21119d40ff4d907dffe8387ae89ee8a09608365bf9
   languageName: node
   linkType: hard
 
@@ -20524,6 +20743,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"long@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "long@npm:4.0.0"
+  checksum: 10/8296e2ba7bab30f9cfabb81ebccff89c819af6a7a78b4bb5a70ea411aa764ee0532f7441381549dfa6a1a98d72abe9138bfcf99f4fa41238629849bc035b845b
+  languageName: node
+  linkType: hard
+
 "longest-streak@npm:^3.0.0":
   version: 3.1.0
   resolution: "longest-streak@npm:3.1.0"
@@ -23548,6 +23774,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"protobufjs@npm:^6.11.2":
+  version: 6.11.4
+  resolution: "protobufjs@npm:6.11.4"
+  dependencies:
+    "@protobufjs/aspromise": "npm:^1.1.2"
+    "@protobufjs/base64": "npm:^1.1.2"
+    "@protobufjs/codegen": "npm:^2.0.4"
+    "@protobufjs/eventemitter": "npm:^1.1.0"
+    "@protobufjs/fetch": "npm:^1.1.0"
+    "@protobufjs/float": "npm:^1.0.2"
+    "@protobufjs/inquire": "npm:^1.1.0"
+    "@protobufjs/path": "npm:^1.1.2"
+    "@protobufjs/pool": "npm:^1.1.0"
+    "@protobufjs/utf8": "npm:^1.1.0"
+    "@types/long": "npm:^4.0.1"
+    "@types/node": "npm:>=13.7.0"
+    long: "npm:^4.0.0"
+  bin:
+    pbjs: bin/pbjs
+    pbts: bin/pbts
+  checksum: 10/6b7fd7540d74350d65c38f69f398c9995ae019da070e79d9cd464a458c6d19b40b07c9a026be4e10704c824a344b603307745863310c50026ebd661ce4da0663
+  languageName: node
+  linkType: hard
+
 "protons-runtime@npm:5.4.0, protons-runtime@npm:^5.0.0, protons-runtime@npm:^5.0.2, protons-runtime@npm:^5.4.0":
   version: 5.4.0
   resolution: "protons-runtime@npm:5.4.0"
@@ -23614,7 +23864,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"punycode@npm:^2.1.0":
+"punycode@npm:^2.1.0, punycode@npm:^2.1.1":
   version: 2.3.1
   resolution: "punycode@npm:2.3.1"
   checksum: 10/febdc4362bead22f9e2608ff0171713230b57aff9dddc1c273aa2a651fbd366f94b7d6a71d78342a7c0819906750351ca7f2edd26ea41b626d87d6a13d1bd059
@@ -24122,6 +24372,17 @@ __metadata:
     react: "*"
     react-native: "*"
   checksum: 10/4a1cf9d1afad66ddfc98895eb691ca14c40ac8be16a629fc39db8550c20523e171f3deb232932e2e53b865821a2a8f831101d44b90a71f07feaaf16413721f46
+  languageName: node
+  linkType: hard
+
+"react-native-url-polyfill@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "react-native-url-polyfill@npm:2.0.0"
+  dependencies:
+    whatwg-url-without-unicode: "npm:8.0.0-3"
+  peerDependencies:
+    react-native: "*"
+  checksum: 10/6a8d605eeb1b0ee9b0f47f1866acc2edfa2131a4a8fb1ea3839ceb507e225b894ed66f49a3bd826fc964f2c8005b3678c9d3b65d07eb0a3b979be830cb618686
   languageName: node
   linkType: hard
 
@@ -26284,6 +26545,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"text-encoding-polyfill@npm:^0.6.7":
+  version: 0.6.7
+  resolution: "text-encoding-polyfill@npm:0.6.7"
+  checksum: 10/75f84dd1d2844180dad08c45fce75b54e978b01e446f31709fd791dc70594c60b03f0a2b55ba915d61f7f86fbab11bec8ee25535c96e688cfc9867df00a1a29d
+  languageName: node
+  linkType: hard
+
 "text-encoding-utf-8@npm:^1.0.1":
   version: 1.0.2
   resolution: "text-encoding-utf-8@npm:1.0.2"
@@ -27708,12 +27976,19 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "waku-utils@workspace:libs/waku-utils"
   dependencies:
-    "@waku/core": "npm:0.0.28"
-    "@waku/interfaces": "npm:0.0.23"
-    "@waku/noise": "npm:0.0.3-da1f593"
-    "@waku/proto": "npm:0.0.6"
-    "@waku/sdk": "npm:0.0.24"
-    "@waku/utils": "npm:0.0.16"
+    "@waku/core": "npm:0.0.29-a7bf4fd.0"
+    "@waku/discovery": "npm:0.0.2-a7bf4fd.0"
+    "@waku/enr": "npm:0.0.23-a7bf4fd.0"
+    "@waku/interfaces": "npm:0.0.24-a7bf4fd.0"
+    "@waku/message-encryption": "npm:0.0.27-a7bf4fd.0"
+    "@waku/message-hash": "npm:0.1.13-a7bf4fd.0"
+    "@waku/noise": "npm:0.0.3-814512c"
+    "@waku/proto": "npm:0.0.7-a7bf4fd.0"
+    "@waku/react-native-polyfills": "npm:0.0.2-a7bf4fd.0"
+    "@waku/relay": "npm:0.0.12-a7bf4fd.0"
+    "@waku/sdk": "npm:0.0.25-a7bf4fd.0"
+    "@waku/utils": "npm:0.0.17-a7bf4fd.0"
+    protobufjs: "npm:^6.11.2"
     tslib: "npm:^2.3.0"
   languageName: unknown
   linkType: soft
@@ -27805,6 +28080,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"webidl-conversions@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "webidl-conversions@npm:5.0.0"
+  checksum: 10/cea864dd9cf1f2133d82169a446fb94427ba089e4676f5895273ea085f165649afe587ae3f19f2f0370751a724bba2d96e9956d652b3e41ac1feaaa4376e2d70
+  languageName: node
+  linkType: hard
+
 "webpack-sources@npm:^3.2.3":
   version: 3.2.3
   resolution: "webpack-sources@npm:3.2.3"
@@ -27830,6 +28112,17 @@ __metadata:
   version: 3.6.20
   resolution: "whatwg-fetch@npm:3.6.20"
   checksum: 10/2b4ed92acd6a7ad4f626a6cb18b14ec982bbcaf1093e6fe903b131a9c6decd14d7f9c9ca3532663c2759d1bdf01d004c77a0adfb2716a5105465c20755a8c57c
+  languageName: node
+  linkType: hard
+
+"whatwg-url-without-unicode@npm:8.0.0-3":
+  version: 8.0.0-3
+  resolution: "whatwg-url-without-unicode@npm:8.0.0-3"
+  dependencies:
+    buffer: "npm:^5.4.3"
+    punycode: "npm:^2.1.1"
+    webidl-conversions: "npm:^5.0.0"
+  checksum: 10/aa588b54b75304335c5e189f8572626f989364c2ac5be5a1643ac687c2501f044405e1eb5761d65a826f570befade5fe51a723d917e9ab7672bb65d14065e82f
   languageName: node
   linkType: hard
 
