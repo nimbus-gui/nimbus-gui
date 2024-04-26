@@ -46,19 +46,12 @@ export async function startNode() {
 
   const node = await createLightNode({
     defaultBootstrap: false,
-    pubsubTopics: ['/waku/2/rs/1/2'],
-    shardInfo: {
-      contentTopics: [contentTopic],
-    },
-    libp2p: {
-      peerDiscovery: [
-        wakuDnsDiscovery([enrTree['SANDBOX']], {
-          lightPush: 5,
-          filter: 5,
-          store: 5,
-        }),
-      ],
-    },
+    pubsubTopics: ['/waku/2/default-waku/proto'],
+    bootstrapPeers: [
+      '/dns4/node-01.ac-cn-hongkong-c.wakuv2.test.status.im/tcp/8000/wss/p2p/16Uiu2HAkvWiyFsgRhuJEb9JfjYxEkoHLgnUQmr1N5mKWnYjxYRVm',
+      '/dns4/node-01.gc-us-central1-a.wakuv2.test.status.im/tcp/8000/wss/p2p/16Uiu2HAmJb2e28qLXxT5kZxVUUoJt72EMzNGXB47Rxx5hw3q4YjS',
+      '/dns4/node-01.ac-cn-hongkong-c.wakuv2.test.status.im/tcp/8000/wss/p2p/16Uiu2HAkvWiyFsgRhuJEb9JfjYxEkoHLgnUQmr1N5mKWnYjxYRVm',
+    ],
   })
 
   await node.start()
@@ -103,23 +96,23 @@ export async function startNode() {
 
   // await proceedHandshake(pairingObj)
 
-  const { decoder } = await proceedHandshake(pairingObj)
-  console.log('Handshake completed')
+  // const { decoder } = await proceedHandshake(pairingObj)
+  // console.log('Handshake completed')
 
-  // const decoder = createDecoder(contentTopic)
-  // const callback = (wakuMessage: NoiseSecureMessage) => {
-  //   log('New message received. Payload:', wakuMessage.payload)
-  // }
+  const decoder = createDecoder(contentTopic, '/waku/2/default-waku/proto')
+  const callback = wakuMessage => {
+    log('New message received. Payload:', wakuMessage)
+  }
 
   // console.log('xxxx', contentTopicToPubsubTopic(contentTopic))
 
-  // const subscription = await node.filter.createSubscription(
-  //   '/waku/2/default-waku/proto',
-  // )
+  const subscription = await node.filter.createSubscription(
+    '/waku/2/default-waku/proto',
+  )
 
-  // await subscription.subscribe([decoder], callback)
+  await subscription.subscribe([decoder], callback)
 
-  // await node.filter.subscribe(decoder, callback)
+  await node.filter.subscribe(decoder, callback)
   // log('Subscription created')
 }
 log('Starting Waku')

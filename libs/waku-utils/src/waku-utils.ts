@@ -26,6 +26,7 @@ export function getPairingObject(
   shardId: any,
 ): WakuPairing {
   const pairingObj = new WakuPairing(
+    '/waku/2/default-waku/proto',
     node.lightPush,
     node.filter,
     nimbusGUIStaticKey,

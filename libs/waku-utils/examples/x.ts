@@ -25,25 +25,21 @@ debug.enable('nimbus-gui:*,waku:noise:pairing,waku:*')
 const shardId = 'xxxx'
 const contentTopic = `/nimbus-gui/0.0.0/${shardId}/proto`
 
-const encoder = createEncoder({ pubsubTopic: '/waku/2/rs/1/2', contentTopic })
+const encoder = createEncoder({
+  pubsubTopic: '/waku/2/default-waku/proto',
+  contentTopic,
+})
 
 import protobuf from 'protobufjs'
 async function main() {
   const node = await createLightNode({
     defaultBootstrap: false,
-    pubsubTopics: ['/waku/2/rs/1/2'],
-    shardInfo: {
-      contentTopics: [contentTopic],
-    },
-    libp2p: {
-      peerDiscovery: [
-        wakuDnsDiscovery([enrTree['SANDBOX']], {
-          lightPush: 5,
-          filter: 5,
-          store: 5,
-        }),
-      ],
-    },
+    pubsubTopics: ['/waku/2/default-waku/proto'],
+    bootstrapPeers: [
+      '/dns4/node-01.ac-cn-hongkong-c.wakuv2.test.status.im/tcp/8000/wss/p2p/16Uiu2HAkvWiyFsgRhuJEb9JfjYxEkoHLgnUQmr1N5mKWnYjxYRVm',
+      '/dns4/node-01.gc-us-central1-a.wakuv2.test.status.im/tcp/8000/wss/p2p/16Uiu2HAmJb2e28qLXxT5kZxVUUoJt72EMzNGXB47Rxx5hw3q4YjS',
+      '/dns4/node-01.ac-cn-hongkong-c.wakuv2.test.status.im/tcp/8000/wss/p2p/16Uiu2HAkvWiyFsgRhuJEb9JfjYxEkoHLgnUQmr1N5mKWnYjxYRVm',
+    ],
   })
 
   await node.start()
