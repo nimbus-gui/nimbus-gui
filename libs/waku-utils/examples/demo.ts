@@ -1,18 +1,25 @@
 import debug from 'debug'
-import { writeFileSync } from 'fs'
+// import { writeFileSync } from 'fs'
 
 import { Protocols, createLightNode, waitForRemotePeer } from '@waku/sdk'
 import * as utils from '@waku/utils/bytes'
 
-import { getPairingObject, proceedHandshake } from 'waku-utils/src/waku-utils'
+import {
+  deserializeObject,
+  getPairingObject,
+  proceedHandshake,
+  serializeObject,
+  serializeObject1,
+} from 'waku-utils/src/waku-utils'
 import { NoiseSecureMessage } from '@waku/noise/dist/codec'
 import { statusProdBootstrapPeers, wakuDefaultPubsubTopic } from '../src/const'
+import { serialize } from 'v8'
 
 debug.enable('nimbus-gui:*')
 
 const log = debug('nimbus-gui:waku:demo')
 
-async function startNode() {
+export async function startNode() {
   const node = await createLightNode({
     defaultBootstrap: false,
     pubsubTopics: [wakuDefaultPubsubTopic],
@@ -25,18 +32,26 @@ async function startNode() {
   const pairingObj = getPairingObject(node)
   const pInfo = pairingObj.getPairingInfo()
 
-  writeFileSync(
-    process.env['QR_MESSAGE_PATH']!,
-    utils.bytesToHex(pInfo.qrMessageNameTag),
-  )
+  // writeFileSync(
+  //   process.env['QR_MESSAGE_PATH']!,
+  //   utils.bytesToHex(pInfo.qrMessageNameTag),
+  // )
 
-  writeFileSync(process.env['QR_PATH']!, pInfo.qrCode)
+  // writeFileSync(process.env['QR_PATH']!, pInfo.qrCode)
 
   console.log(
     `./build/status_node_manager waku pair --qr=${pInfo.qrCode} --qr-message-nametag=${utils.bytesToHex(pInfo.qrMessageNameTag)}`,
   )
 
-  const { decoder } = await proceedHandshake(pairingObj)
+  const { decoder, handshakeResult } = await proceedHandshake(pairingObj, node)
+
+  // console.log('Handshake result:', handshakeResult)
+  // console.log('Handshake result:', handshakeResult)
+  const x = serializeObject(handshakeResult)
+  const y = serializeObject1(handshakeResult)
+  // console.log('Serialized:', x)
+
+  console.log('\ndeserialized:', deserializeObject(x))
 
   const callback = (wakuMessage: NoiseSecureMessage) => {
     log('New message received. Payload:', wakuMessage.payload)

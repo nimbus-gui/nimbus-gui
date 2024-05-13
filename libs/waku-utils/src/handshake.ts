@@ -9,23 +9,29 @@ import {
   CipherState,
   Nonce,
   PayloadV2,
+  Cipher,
 } from '@waku/noise'
 
 import { LostNametag } from './messagenametag'
+import { Cipher } from 'crypto'
+
+function isMyInterface(obj: any): obj is Cipher {
+  return obj
+}
 
 const log = debug('nimbus-gui:waku:handshake')
 
 export class CustomHandshakeResult extends HandshakeResult {
   protected lostNametagsInbound: LostNametag[] = []
   constructor(
-    csInbound: CipherState,
     csOutbound: CipherState,
+    csInbound: CipherState,
     nametagsInbound: MessageNametagBuffer,
     nametagsOutbound: MessageNametagBuffer,
     rs: Uint8Array,
     h: Uint8Array,
   ) {
-    super(csInbound, csOutbound)
+    super(csOutbound, csInbound)
     this.nametagsInbound = nametagsInbound
     this.nametagsOutbound = nametagsOutbound
     this.rs = rs

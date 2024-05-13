@@ -11212,9 +11212,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@waku/noise@npm:0.0.3-44d0eec":
-  version: 0.0.3-44d0eec
-  resolution: "@waku/noise@npm:0.0.3-44d0eec"
+"@waku/noise@git+https://git@github.com:EmilIvanichkovv/js-noise.git#commit=d0135ad45fb447873dea254f24d1c02875d1c8fc":
+  version: 0.0.3
+  resolution: "@waku/noise@https://git@github.com:EmilIvanichkovv/js-noise.git#commit=d0135ad45fb447873dea254f24d1c02875d1c8fc"
   dependencies:
     "@stablelib/chacha20poly1305": "npm:^1.0.1"
     "@stablelib/hkdf": "npm:^1.0.1"
@@ -11231,7 +11231,7 @@ __metadata:
     pkcs7-padding: "npm:^0.1.1"
     uint8arraylist: "npm:^2.3.2"
     uint8arrays: "npm:^4.0.2"
-  checksum: 10/6a989fdeaa451bd966383eab4cee52bbcfd7b786170658559567e37378bf312d45d1e222f355c1fc11f5d28002778c07450a40314355ec1f95ee219c634812af
+  checksum: 10/f9406c7bc02716cacdbc6c2b252d1c05ffea9e588fab591729c8d85d63cfb47c453deb16645feae05ddf0e41eb5c2e322ca8e7046386686d6070f07142e58dc6
   languageName: node
   linkType: hard
 
@@ -27858,7 +27858,7 @@ __metadata:
     "@waku/interfaces": "npm:0.0.24-fd60cc2.0"
     "@waku/message-encryption": "npm:0.0.27-fd60cc2.0"
     "@waku/message-hash": "npm:0.1.13-fd60cc2.0"
-    "@waku/noise": "npm:0.0.3-44d0eec"
+    "@waku/noise": "git+https://git@github.com:EmilIvanichkovv/js-noise.git#commit=d0135ad45fb447873dea254f24d1c02875d1c8fc"
     "@waku/proto": "npm:0.0.7-fd60cc2.0"
     "@waku/relay": "npm:0.0.12-fd60cc2.0"
     "@waku/sdk": "npm:0.0.25-fd60cc2.0"
